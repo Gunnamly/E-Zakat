@@ -21,7 +21,7 @@ public class koneksi {
                 String url = new String();
                 String user = new String();
                 String password = new String();
-                url = "jdbc:mysql://localhost:3306/loginregister";
+                url = "jdbc:mysql://localhost:3306/zakat";
                 user = "root";
                 password = "";
                 DriverManager.registerDriver(new com.mysql.jdbc.Driver());
