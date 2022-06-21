@@ -41,6 +41,7 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="d5" green="ff" red="df" type="rgb"/>
         </Property>
+        <Property name="focusCycleRoot" type="boolean" value="true"/>
       </Properties>
 
       <Layout>
@@ -247,6 +248,7 @@
         </Component>
         <Component class="javax.swing.JTextField" name="objek">
           <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="objekActionPerformed"/>
             <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="objekKeyTyped"/>
           </Events>
         </Component>

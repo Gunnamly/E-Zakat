@@ -51,6 +51,7 @@ public class hitungzakat extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(600, 200));
         setSize(new java.awt.Dimension(600, 200));
 
         jPanel1.setBackground(new java.awt.Color(0, 217, 179));

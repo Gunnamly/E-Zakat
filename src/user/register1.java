@@ -8,9 +8,7 @@ import javax.swing.JOptionPane;
 import java.sql.Statement;
 
 public class register1 extends javax.swing.JFrame {
-private Connection conn = new koneksi().getkoneksi();
-
-    
+private Connection conn = new koneksi().getkoneksi();   
     protected void kosong(){
         ruser.setText("");
         rumur.setText("");

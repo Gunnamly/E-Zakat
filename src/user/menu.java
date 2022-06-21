@@ -19,6 +19,7 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
+
 public class menu extends javax.swing.JFrame {
     login login = new login();
     Connection conn = null;
@@ -94,8 +95,7 @@ public class menu extends javax.swing.JFrame {
                 arr[x][0] = rs.getString(2);
                 arr[x][1] = rs.getString(3);
                 arr[x][2] = rs.getInt(4);
-                arr[x][3] = rs.getTimestamp(5);
-                
+                arr[x][3] = rs.getTimestamp(5);                
                 x++;
             }
             jTable1.setModel(new javax.swing.table.DefaultTableModel(arr, header));
@@ -133,6 +133,7 @@ public class menu extends javax.swing.JFrame {
         setLocation(new java.awt.Point(600, 200));
 
         jPanel1.setBackground(new java.awt.Color(223, 255, 213));
+        jPanel1.setFocusCycleRoot(true);
 
         jPanel2.setBackground(new java.awt.Color(0, 204, 0));
 
@@ -218,6 +219,11 @@ public class menu extends javax.swing.JFrame {
             }
         });
 
+        objek.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                objekActionPerformed(evt);
+            }
+        });
         objek.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 objekKeyTyped(evt);
@@ -323,6 +329,10 @@ public class menu extends javax.swing.JFrame {
             
         }         
     }//GEN-LAST:event_objekKeyTyped
+
+    private void objekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_objekActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_objekActionPerformed
 
     /**
      * @param args the command line arguments

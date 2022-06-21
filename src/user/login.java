@@ -5,7 +5,6 @@
  */
 package user;
 
-
 import database.koneksi;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,12 +25,10 @@ public class login extends javax.swing.JFrame {
     protected void kosong(){
         luser.setText("");
         lpass.setText("");
-    }
-            
+    }            
     public login() {
         initComponents();
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -208,10 +205,7 @@ public class login extends javax.swing.JFrame {
         conn = koneksi.getkoneksi();
         String Sql = "Select * FROM user Where username='"+luser.getText()+"' and password='"+lpass.getText()+"'";
         try{
-            pst = (PreparedStatement)conn.prepareStatement(Sql);
-            //pst.setString(1, luser.getText());
-            //pst.setString(2, lpass.getText());
-            
+            pst = (PreparedStatement)conn.prepareStatement(Sql);       
             rs = pst.executeQuery();
             if(rs.next()){
                 level = rs.getInt(8);
